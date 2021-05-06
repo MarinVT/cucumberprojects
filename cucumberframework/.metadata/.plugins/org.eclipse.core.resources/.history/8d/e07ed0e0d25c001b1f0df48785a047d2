@@ -1,0 +1,37 @@
+package bddcucumber.steps4;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import junit.framework.Assert;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.DataTable;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LoginScenOutTest {
+
+	WebDriver driver;
+
+	@Before()
+	public void setup() throws IOException {
+
+		System.setProperty(
+				"webdriver.chrome.driver",
+				"C:\\Users\\acer\\Desktop\\bddframework\\bddcucumber\\src\\test\\java\\bddcucumber\\resources\\chromedriver.exe");
+		this.driver = new ChromeDriver();
+		this.driver.manage().window().maximize();
+		this.driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+	}
+
+	
+}

@@ -1,0 +1,31 @@
+package testCases;
+
+import org.testng.annotations.Test;
+
+import baseClasses.PageBaseClass;
+import pageClasses.LandingPage;
+import pageClasses.MoneyPage;
+import pageClasses.MyPortfolioHomePage;
+import pageClasses.PortfolioLoginPage;
+
+public class MyPortfolioPage {
+	
+	LandingPage landingPage;
+	MoneyPage moneyPage;
+	PortfolioLoginPage portfolioLoginPage;
+	MyPortfolioHomePage myPortfolioHomePage;
+	
+	@Test
+	public void openPortfolio() {
+		landingPage.invokeBrowser("Chrome");
+		landingPage.openApp();
+		
+		moneyPage = landingPage.clickMoneyLink();
+		
+		portfolioLoginPage = moneyPage.clickSignLink();
+		myPortfolioHomePage = portfolioLoginPage.doLogin("marinvt1", "Marin_2050");
+		myPortfolioHomePage.getTitle("Rediff Moneywiz | My Portfolio(s)");
+		
+	}
+	
+}

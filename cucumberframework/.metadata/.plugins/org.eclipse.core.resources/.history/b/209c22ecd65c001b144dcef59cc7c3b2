@@ -1,0 +1,16 @@
+ Feature: Login into account
+ 
+  Scenario Outline:  Login to account with valid username and password
+    Given  User navigates to "<url>"
+    When User clicks on login button 
+    And  User enters valid "<username>" username
+    And User enters valid "<password>" password
+    When User clicks on login button
+    Then User is successfully logged in with "<message>" 
+    
+
+    Examples: 
+      | 				url   																									 | username         |  password          |  message                  |
+      | http://www.webdriveruniversity.com/   |     user1            |  test123        		   |  validation failed     |
+      | http://www.webdriveruniversity.com/   |     webdriver     |  webdriver123   |  validation succeeded |
+      

@@ -1,0 +1,5 @@
+datadrivenframework.outdir=/test-output
+datadrivenframework.useProjectJar=false
+eclipse.preferences.version=1
+seleniumpom.outdir=/test-output
+seleniumpom.useProjectJar=false

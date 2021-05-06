@@ -1,0 +1,8 @@
+dtdData=\#808000 | null | false | false | false | false
+dtdDefault=\#8000ff | null | false | false | false | false
+dtdKeyword=\#ff8000 | null | false | false | false | false
+dtdString=\#408080 | null | false | true | false | false
+dtdSymbol=\#000080 | null | false | false | false | false
+dtdTag=\#808080 | null | false | false | false | false
+dtdTagName=\#80ff80 | null | false | false | false | false
+eclipse.preferences.version=1

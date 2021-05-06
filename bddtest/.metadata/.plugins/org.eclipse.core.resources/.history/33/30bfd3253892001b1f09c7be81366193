@@ -1,0 +1,29 @@
+package pageClasses;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import baseClasses.PageBaseClass;
+
+public class PortfolioLoginPage extends PageBaseClass{
+	
+	@FindBy(id="useremail")
+	public WebElement userMailField;
+	
+	@FindBy(id="userpass")
+	public WebElement userPasswordField;
+	
+	@FindBy(id="loginsubmit")
+	public WebElement userSubmitBtn;
+	
+	public MyPortfolioHomePage doLogin(String userMail, String userPassword) {
+		userMailField.sendKeys(userMail);
+		userPasswordField.sendKeys(userPassword);
+		userSubmitBtn.click();
+		
+		return PageFactory.initElements(driver, MyPortfolioHomePage.class);
+	}
+	
+	
+}

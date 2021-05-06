@@ -1,0 +1,13 @@
+package pageClasses;
+
+import org.openqa.selenium.WebDriver;
+
+import baseClasses.PageBaseClass;
+
+public class LoginPage extends PageBaseClass {
+
+	public LoginPage(WebDriver driver) {
+		PageBaseClass.driver = driver;
+	}
+
+}

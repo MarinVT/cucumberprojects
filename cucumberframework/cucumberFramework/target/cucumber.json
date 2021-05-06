@@ -1,0 +1,155 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5970069600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactUsForm.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Submit valid data via contact us form",
+        "description": "",
+        "id": "fill-submit-form;submit-valid-data-via-contact-us-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 960484400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I access webdriveruniversity website",
+            "match": {
+              "location": "ContactUsForm.i_access_webdriveruniversity_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 106615200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on contact us form",
+            "match": {
+              "location": "ContactUsForm.i_click_on_contact_us_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2171573900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter user first name",
+            "match": {
+              "location": "ContactUsForm.i_enter_user_first_name(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "marin",
+                  "igrata",
+                  "nomer1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44489000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter user last name",
+            "match": {
+              "location": "ContactUsForm.i_enter_user_last_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70984000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter valid email address",
+            "match": {
+              "location": "ContactUsForm.i_enter_valid_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131889100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter comments",
+            "match": {
+              "location": "ContactUsForm.i_enter_comments(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Example2",
+                  "Example2"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Example2",
+                  "Example2"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 188400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on submit button",
+            "match": {
+              "location": "ContactUsForm.i_click_on_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The information should be successfully submitted",
+            "match": {
+              "location": "ContactUsForm.the_information_should_be_successfully_submitted()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Fill submit form",
+    "description": "",
+    "id": "fill-submit-form",
+    "keyword": "Feature",
+    "uri": "ContactUsForm.feature"
+  }
+]

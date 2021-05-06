@@ -1,0 +1,9 @@
+cucumber.eclipse.editor.editors.Editor.unmatchedsteperror.text=false
+eclipse.preferences.version=1
+errorIndication=false
+errorTextStyle=NONE
+lineNumberColor=192,192,192
+occurrenceIndicationColor=255,0,0
+overviewRuler_migration=migrated_3.1
+warningIndication=false
+warningTextStyle=NONE

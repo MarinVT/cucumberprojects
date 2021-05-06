@@ -1,0 +1,19 @@
+package pageClasses;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import baseClasses.PageBaseClass;
+
+public class MoneyPage extends PageBaseClass {
+		
+	@FindBy(xpath="//span[@id='signin_info']/a[@title='Already a user? Sign in']")
+	public WebElement signLink;
+	
+	public PortfolioLoginPage clickSignLink() {
+		signLink.click();
+		
+		return PageFactory.initElements(driver, PortfolioLoginPage.class);
+	}
+}

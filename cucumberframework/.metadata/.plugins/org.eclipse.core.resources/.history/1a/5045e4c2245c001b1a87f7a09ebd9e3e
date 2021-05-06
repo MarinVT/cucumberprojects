@@ -1,0 +1,14 @@
+Feature: Submit data to webdriveruniversity using contact us form
+
+  Scenario: Submit data via contact us form
+    Given I access webdriver uni web site
+    Then I click on contact us button 
+    And some other action
+    And yet another action
+    Then I validate the outcomes
+    And check more outcomes
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |
